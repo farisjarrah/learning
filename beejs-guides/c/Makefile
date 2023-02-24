@@ -176,3 +176,29 @@ null-pointer:
 	./bin/null-pointer
 	@echo "===> Cleaning up null-pointer"
 	rm bin/null-pointer
+
+ch6: easy-arr arr-length arr-initializer
+
+easy-arr:
+	@echo "===> Compiling easy-arr"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/easy-arr" ch6/easy-arr.c
+	@echo "===> Running easy-arr"
+	./bin/easy-arr
+	@echo "===> Cleaning up easy-arr"
+	rm bin/easy-arr
+
+arr-length:
+	@echo "===> Compiling arr-length"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/arr-length" ch6/arr-length.c
+	@echo "===> Running arr-length"
+	./bin/arr-length
+	@echo "===> Cleaning up arr-length"
+	rm bin/arr-length
+	
+arr-initializer:
+	@echo "===> Compiling arr-initializer"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/arr-initializer" ch6/arr-initializer.c
+	@echo "===> Running arr-initializer"
+	./bin/arr-initializer
+	@echo "===> Cleaning up arr-initializer"
+	rm bin/arr-initializer

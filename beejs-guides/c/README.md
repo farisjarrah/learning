@@ -25,6 +25,8 @@ make ch4
 Simply running `make` will print a help message. After the program runs the binary is automatically cleaned up.
 
 ## Practice Log
-* 2023/01/16 - Begin -> Ch. 3.1.3
-* 2023/01/17 - Ch. 3.2 -> 3.3.1
-* 2023/01/19 - Ch 3.3.2 -> 3.3.5, Ch 4
+* 2023-01-16 - Begin -> Ch. 3.1.3
+* 2023-01-17 - Ch. 3.2 -> 3.3.1
+* 2023-01-19 - Ch 3.3.2 -> 3.3.5, Ch 4
+* 2023-02-06 - Ch 5
+* 2023-02-23 - Ch 6 -> 6.3
