@@ -177,7 +177,7 @@ null-pointer:
 	@echo "===> Cleaning up null-pointer"
 	rm bin/null-pointer
 
-ch6: easy-arr arr-length arr-initializer
+ch6: easy-arr arr-length arr-initializer out-of-bounds multidimensional-arr pointer-to-array pass-arr-to-func change-arr-in-func multidimensional-arr-to-func
 
 easy-arr:
 	@echo "===> Compiling easy-arr"
@@ -202,3 +202,51 @@ arr-initializer:
 	./bin/arr-initializer
 	@echo "===> Cleaning up arr-initializer"
 	rm bin/arr-initializer
+
+out-of-bounds:
+	@echo "===> Compiling out-of-bounds"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/out-of-bounds" ch6/out-of-bounds.c
+	@echo "===> Running out-of-bounds"
+	./bin/out-of-bounds
+	@echo "===> Cleaning up out-of-bounds"
+	rm bin/out-of-bounds
+
+multidimensional-arr:
+	@echo "===> Compiling multidimensional-arr"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/multidimensional-arr" ch6/multidimensional-arr.c
+	@echo "===> Running multidimensional-arr"
+	./bin/multidimensional-arr
+	@echo "===> Cleaning up multidimensional-arr"
+	rm bin/multidimensional-arr
+
+pointer-to-array:
+	@echo "===> Compiling pointer-to-array"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/pointer-to-array" ch6/pointer-to-array.c
+	@echo "===> Running pointer-to-array"
+	./bin/pointer-to-array
+	@echo "===> Cleaning up pointer-to-array"
+	rm bin/pointer-to-array
+
+pass-arr-to-func:
+	@echo "===> Compiling pass-arr-to-func"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/pass-arr-to-func" ch6/pass-arr-to-func.c
+	@echo "===> Running pass-arr-to-func"
+	./bin/pass-arr-to-func
+	@echo "===> Cleaning up pass-arr-to-func"
+	rm bin/pass-arr-to-func
+
+change-arr-in-func:
+	@echo "===> Compiling change-arr-in-func"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/change-arr-in-func" ch6/change-arr-in-func.c
+	@echo "===> Running change-arr-in-func"
+	./bin/change-arr-in-func
+	@echo "===> Cleaning up change-arr-in-func"
+	rm bin/change-arr-in-func
+
+multidimensional-arr-to-func:
+	@echo "===> Compiling multidimensional-arr-to-func"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/multidimensional-arr-to-func" ch6/multidimensional-arr-to-func.c
+	@echo "===> Running multidimensional-arr-to-func"
+	./bin/multidimensional-arr-to-func
+	@echo "===> Cleaning up multidimensional-arr-to-func"
+	rm bin/multidimensional-arr-to-func
