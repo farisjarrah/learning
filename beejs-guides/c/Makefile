@@ -1,7 +1,7 @@
 help:
 	@echo "===> To run any program run: make <filename-without-c-extension>"
 
-all: ch3 ch4 ch5
+all: ch3 ch4 ch5 ch6 ch7
 
 ch3: hello hello-variation bool ternary sizeof flow while-loop do-while-loop do-while-loop-2 while-rand for-loop switch-case
 
@@ -250,3 +250,30 @@ multidimensional-arr-to-func:
 	./bin/multidimensional-arr-to-func
 	@echo "===> Cleaning up multidimensional-arr-to-func"
 	rm bin/multidimensional-arr-to-func
+
+ch7: string-literal my-strlen use-strcpy
+
+string-literal:
+	@echo "===> Compiling string-literal"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/string-literal" ch7/string-literal.c
+	@echo "===> Running string-literal"
+	./bin/string-literal
+	@echo "===> Cleaning up string-literal"
+	rm bin/string-literal
+
+my-strlen:
+	@echo "===> my-strlen"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/my-strlen" ch7/my-strlen.c
+	@echo "===> Running my-strlen"
+	./bin/my-strlen
+	@echo "===> Cleaning up my-strlen"
+	rm bin/my-strlen
+
+use-strcpy:
+	@echo "===> use-strcpy"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/use-strcpy" ch7/use-strcpy.c
+	@echo "===> Running use-strcpy"
+	./bin/use-strcpy
+	@echo "===> Cleaning up use-strcpy"
+	rm bin/use-strcpy
+
