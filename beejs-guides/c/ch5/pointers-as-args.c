@@ -21,7 +21,7 @@ int main(void)
 
     printf("i is %d, j is %d\n", i, *j);
 
-    int z = 0;
-    scanf("%d", &z);
-    printf("z is %d\n", z); // scanf() dereferences the pointer we pass it in order to modify the variable it points to.
+    //int z = 0;
+    //scanf("%d", &z);
+    //printf("z is %d\n", z); // scanf() dereferences the pointer we pass it in order to modify the variable it points to.
 }

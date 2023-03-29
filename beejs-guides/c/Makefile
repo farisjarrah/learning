@@ -1,7 +1,8 @@
 help:
 	@echo "===> To run any program run: make <filename-without-c-extension>"
 
-all: ch3 ch4 ch5 ch6 ch7 ch8
+all: ch3 ch4 ch5 ch6 ch7 ch8 ch9
+
 
 ch3: hello hello-variation bool ternary sizeof flow while-loop do-while-loop do-while-loop-2 while-rand for-loop switch-case
 
@@ -101,6 +102,7 @@ switch-case:
 	@echo "===> Cleaning up switch-case"
 	rm bin/switch-case
 
+
 ch4: funcs passing-by-value func-proto empty-param-list
 
 funcs:
@@ -134,6 +136,7 @@ empty-param-list:
 	./bin/empty-param-list
 	@echo "===> Cleaning up empty-param-list"
 	rm bin/empty-param-list
+
 
 ch5: mem-and-vars pointer-types dereferencing pointers-as-args null-pointer
 
@@ -176,6 +179,7 @@ null-pointer:
 	./bin/null-pointer
 	@echo "===> Cleaning up null-pointer"
 	rm bin/null-pointer
+
 
 ch6: easy-arr arr-length arr-initializer out-of-bounds multidimensional-arr pointer-to-array pass-arr-to-func change-arr-in-func multidimensional-arr-to-func
 
@@ -251,6 +255,7 @@ multidimensional-arr-to-func:
 	@echo "===> Cleaning up multidimensional-arr-to-func"
 	rm bin/multidimensional-arr-to-func
 
+
 ch7: string-literal my-strlen use-strcpy
 
 string-literal:
@@ -277,6 +282,7 @@ use-strcpy:
 	@echo "===> Cleaning up use-strcpy"
 	rm bin/use-strcpy
 
+
 ch8: declare-struct struct-to-func-and-arrow-op
 
 declare-struct:
@@ -295,3 +301,13 @@ struct-to-func-and-arrow-op:
 	@echo "===> Cleaning up struct-to-func-and-arrow-op"
 	rm bin/struct-to-func-and-arrow-op
 
+
+ch9: file-io
+
+file-io:
+	@echo "===> Compiling file-io"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/file-io" ch9/file-io.c
+	@echo "===> Running file-io"
+	./bin/file-io
+	@echo "===> Cleaning up file-io"
+	rm bin/file-io

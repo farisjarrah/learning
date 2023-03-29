@@ -3,10 +3,9 @@
 https://beej.us/guide/
 
 ## compilation flags used for this book
-gcc -Wall -Wextra -std=c2x -pedantic filename.c
+`gcc -Wall -Wextra -std=c2x -pedantic filename.c`
 
 ## dependences used for this project
-* ubuntu 22.04
 * gcc
 * gnu make
 * bash
@@ -32,4 +31,4 @@ Simply running `make` will print a help message. After the program runs the bina
 * 2023-02-23 - Ch 6 -> 6.3
 * 2023-02-27 - Ch 6.4 -> 6.6.4
 * 2023-03-27 - Ch 7
-* 2023-03-28 - Ch 8
+* 2023-03-28 - Ch 8, Ch 9 -> Ch 9.3
