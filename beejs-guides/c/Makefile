@@ -1,7 +1,7 @@
 help:
 	@echo "===> To run any program run: make <filename-without-c-extension>"
 
-all: ch3 ch4 ch5 ch6 ch7
+all: ch3 ch4 ch5 ch6 ch7 ch8
 
 ch3: hello hello-variation bool ternary sizeof flow while-loop do-while-loop do-while-loop-2 while-rand for-loop switch-case
 
@@ -276,4 +276,22 @@ use-strcpy:
 	./bin/use-strcpy
 	@echo "===> Cleaning up use-strcpy"
 	rm bin/use-strcpy
+
+ch8: declare-struct struct-to-func-and-arrow-op
+
+declare-struct:
+	@echo "===> Compiling declare-struct"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/declare-struct" ch8/declare-struct.c
+	@echo "===> Running declare-struct"
+	./bin/declare-struct
+	@echo "===> Cleaning up declare-struct"
+	rm bin/declare-struct
+
+struct-to-func-and-arrow-op:
+	@echo "===> Compiling struct-to-func-and-arrow-op"
+	gcc -Wall -Wextra -std=c2x -pedantic -o "bin/struct-to-func-and-arrow-op" ch8/struct-to-func-and-arrow-op.c
+	@echo "===> Running struct-to-func-and-arrow-op"
+	./bin/struct-to-func-and-arrow-op
+	@echo "===> Cleaning up struct-to-func-and-arrow-op"
+	rm bin/struct-to-func-and-arrow-op
 
