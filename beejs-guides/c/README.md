@@ -32,3 +32,4 @@ Simply running `make` will print a help message. After the program runs the bina
 * 2023-02-27 - Ch 6.4 -> 6.6.4
 * 2023-03-27 - Ch 7
 * 2023-03-28 - Ch 8, Ch 9 -> Ch 9.3
+* 2023-04-24 - Ch 9.4
